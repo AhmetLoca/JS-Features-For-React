@@ -15,10 +15,8 @@ function topla2(sayi1, sayi2 = 4) {
 console.log(topla2(3)); // NaN
 
 /*
-
 React'ta reducer olustururken state'te baslangıc state'ti giriyoruz ve bunu orada kullanıyoruz
 */
-
 
 const STATE_BASLANGIC = { yukleniyor : false, yazilar:[]};
 
