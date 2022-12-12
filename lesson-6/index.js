@@ -2,7 +2,8 @@
 
 let user = { name: "Ahmet", age: 25, city: "Ankara" };
 
-//user objesini mutate etmiş oluyoruz. BUNU REACT İÇİNDE STATE DEGİSİKLİGİNDE KULLANMIYORUZ!.
+//user objesini mutate etmiş oluyoruz.
+//BUNU REACT İÇİNDE STATE DEGİSİKLİGİNDE KULLANMIYORUZ!.
 user.city = "Istanbul";
 
 
@@ -11,10 +12,8 @@ user2 = { ...user, city: "Istanbul" }; //iki tane city isimli anahtar oldugundan
 console.log(user2); //{ name: "Ahmet", age: 25, city: "Istanbul" };
 
 
-user3 = { ...user, city: "Van" };
-console.log(user3); //{ name: "Ahmet", age: 25, city: "Van" };
-
-//REDUX İÇİNDE COK KULLANILIR. OZELLİKLE REDUCER İCİNDE STATE GUNCELLEMELERİNİ YAPARKEN
+//REDUX İÇİNDE COK KULLANILIR. 
+//OZELLİKLE REDUCER İCİNDE STATE GUNCELLEMELERİNİ YAPARKEN
 
 INITIAL_STATE = {
     yukleniyor:false,
@@ -49,10 +48,8 @@ state.arabalar.push("Tofas")
 //push yaptıgımızda hafizadaki yeri degistirmis olmuyoruz. State hale aynı objenin içine bakıyor
 
 //yeni bir obje olusturdugumuzda
-
 0002 -> {yukleniyor, hataMesaji, [...arabalar,"Tofas"]} -> state
 /*
 artık state yeni bir objede.
-
 Bu sayede "immutability yani degismezlik kuralına riayet edebildik."
 */
