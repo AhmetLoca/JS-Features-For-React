@@ -1,9 +1,6 @@
 //.includes()
-
 const isim = "Mehmet";
-
 console.log(isim.includes("mehmet")); // false
-
 /*
 includes, buyuk kucuk harfe duyarli.
 */
@@ -24,6 +21,6 @@ const urunler = [
 const arama = "KALEM";
 console.log(
   urunler.filter((urun) =>
-    urun.name.toLocaleLowerCase().includes(arama.toLowerCase())
+    urun.name.toLowerCase().includes(arama.toLowerCase())
   )
 );
