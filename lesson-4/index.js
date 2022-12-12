@@ -34,5 +34,5 @@ console.log(birinciEleman);
 console.log(kalanElemanlar);
 
 // spread operatoru geriye kalan elemanlar için kullanılır. Aşagıdaki hatali bir kullanimdir.
-const [...kalanElemanlar2, birinciEleman2] = sayilar;
-console.log(kalanElemanlar2);
+// const [...kalanElemanlar2, birinciEleman2] = sayilar;
+// console.log(kalanElemanlar2);
