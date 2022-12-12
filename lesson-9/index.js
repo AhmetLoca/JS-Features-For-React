@@ -2,8 +2,9 @@
 // .find() .some() .every()
 
 /*
+.find()
 Bir dizide bir elemanı bulmaya yarar. Ancak bulur bulmaz islemi durdurur.
-Dizide sizin verdiginiz butun elemanları bulmaz. İlk buldugu elemanda durur. Ve döndürür.
+Dizide sizin verdiginiz butun elemanları bulmaz. İlk buldugu elemanda durur ve döndürür.
 */
 
 const urunler = [
@@ -14,20 +15,16 @@ const urunler = [
 ];
 
 //callback function'inin aldıgı parametre dizinin herbir elemanını temsil eder.
-console.log(
-  "find:",
-  urunler.find((urun) => urun.fiyat > 5)
-);
+console.log("find:",urunler.find((urun) => urun.fiyat > 5));
 // ilk buldugu elemanı döndürdü ve bıraktı.
 
 //.some()
 
 /*
-dizide en az bir elemanın girelen kosulu saglayıp saglamadıyla ilgili
-true veya false dondurur.
+Dizide en az bir eleman kosulu saglıyorsa true döner.
 */
 
-console.log(urunler.some((urun) => urun.fiyat < 2)); // false
+console.log(urunler.some((urun) => urun.fiyat < 7)); // false
 
 //.every()
 
